@@ -470,19 +470,19 @@ func testIssue(t *testing.T, path string, expectedNumErrors, expectedNumWarnings
 	}
 }
 
-// test go-swagger/go-swagger#1614 (circular refs)
+// test rws-github/go-swagger#1614 (circular refs)
 func Test_Issue1614(t *testing.T) {
 	path := filepath.Join("fixtures", "bugs", "1614", "gitea.json")
 	testIssue(t, path, 0, 3)
 }
 
-// Test go-swagger/go-swagger#1621 (remote $ref)
+// Test rws-github/go-swagger#1621 (remote $ref)
 func Test_Issue1621(t *testing.T) {
 	path := filepath.Join("fixtures", "bugs", "1621", "fixture-1621.yaml")
 	testIssue(t, path, 0, 0)
 }
 
-// Test go-swagger/go-swagger#1429 (remote $ref)
+// Test rws-github/go-swagger#1429 (remote $ref)
 func Test_Issue1429(t *testing.T) {
 	path := filepath.Join("fixtures", "bugs", "1429", "swagger.yaml")
 	testIssue(t, path, 0, 0)

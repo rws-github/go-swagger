@@ -23,7 +23,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// pin pointing go-swagger/go-swagger#1816 issue with cloning ref's
+// pin pointing rws-github/go-swagger#1816 issue with cloning ref's
 func TestCloneRef(t *testing.T) {
 	var b bytes.Buffer
 	src := MustCreateRef("#/definitions/test")

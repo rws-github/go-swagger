@@ -80,7 +80,7 @@ func TestFailsInvalidJSON(t *testing.T) {
 	assert.Error(t, err)
 }
 
-// issue go-swagger/go-swagger#1816 (regression when cloning original spec)
+// issue rws-github/go-swagger#1816 (regression when cloning original spec)
 func TestIssue1846(t *testing.T) {
 	swaggerFile := "fixtures/bugs/1816/fixture-1816.yaml"
 	document, err := Spec(swaggerFile)

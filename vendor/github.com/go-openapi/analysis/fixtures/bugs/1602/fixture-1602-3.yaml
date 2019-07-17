@@ -7,7 +7,7 @@ basePath: "/v1.24"
 info:
   title: "derived from Pouch Engine API"
   version: "1.24"
-  description: A variation on issue go-swagger/go-swagger#1609
+  description: A variation on issue rws-github/go-swagger#1609
 paths:
   /_pang:
     get:

@@ -1280,21 +1280,21 @@ func assertNoOAIGen(t *testing.T, bp string, sp *spec.Swagger) bool {
 }
 
 func TestFlatten_oaigen_1260(t *testing.T) {
-	// test fixture from issue go-swagger/go-swagger#1260
+	// test fixture from issue rws-github/go-swagger#1260
 	bp := filepath.Join("fixtures", "oaigen", "test3-swagger.yaml")
 	sp := loadOrFail(t, bp)
 	assert.Truef(t, assertNoOAIGen(t, bp, sp), "did not expect an OAIGen definition here")
 }
 
 func TestFlatten_oaigen_1260bis(t *testing.T) {
-	// test fixture from issue go-swagger/go-swagger#1260
+	// test fixture from issue rws-github/go-swagger#1260
 	bp := filepath.Join("fixtures", "oaigen", "test3-bis-swagger.yaml")
 	sp := loadOrFail(t, bp)
 	assert.Truef(t, assertNoOAIGen(t, bp, sp), "did not expect an OAIGen definition here")
 }
 
 func TestFlatten_oaigen_1260ter(t *testing.T) {
-	// test fixture from issue go-swagger/go-swagger#1260
+	// test fixture from issue rws-github/go-swagger#1260
 	bp := filepath.Join("fixtures", "oaigen", "test3-ter-swagger.yaml")
 	sp := loadOrFail(t, bp)
 	assert.Truef(t, assertNoOAIGen(t, bp, sp), "did not expect an OAIGen definition here")
@@ -1897,7 +1897,7 @@ func TestFlatten_Issue_1774(t *testing.T) {
 
 func TestFlatten_1429(t *testing.T) {
 	// nested / remote $ref in response / param schemas
-	// issue go-swagger/go-swagger#1429
+	// issue rws-github/go-swagger#1429
 	bp := filepath.Join("fixtures", "bugs", "1429", "swagger.yaml")
 	sp := loadOrFail(t, bp)
 

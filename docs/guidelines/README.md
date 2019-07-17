@@ -10,14 +10,14 @@ Cloning `go-swagger`:
 ```bash
 mkdir -p $GOPATH/src/github.com/go-swagger
 cd $GOPATH/src/github.com/go-swagger
-git clone https://github.com/go-swagger/go-swagger
+git clone https://github.com/rws-github/go-swagger
 ```
 
 All dependencies are available in the checked out `vendor` directory.
 
 Building and installing go-swagger from source on your system:
 ```
-go install github.com/go-swagger/go-swagger/cmd/swagger
+go install github.com/rws-github/go-swagger/cmd/swagger
 ```
 
 Running standard unit tests:
@@ -68,7 +68,7 @@ and testable with `go test ./...`
 
 All PR's require a review by a team member, whatever the CI engines tell.
 
-##### go-swagger/go-swagger
+##### rws-github/go-swagger
 
 Enabled CI engines and bots:
 - CircleCI (linux)
@@ -126,7 +126,7 @@ Enabled CI engines:
 
 ### Vendoring
 
-`go-swagger/go-swagger` repo comes with a vendor directory. This is because
+`rws-github/go-swagger` repo comes with a vendor directory. This is because
 we release binary distributions (docker, debian...).
 
 The `go-openapi` packages are **not** vendored.
@@ -187,7 +187,7 @@ Do not forget to update this script when you add a new example.
 
 ### Writing documentation
 
-##### go-swagger/go-swagger
+##### rws-github/go-swagger
 
 The `go-swagger` documentation site (`goswagger.io`) is built with GitBooks.
 Configuration is in `book.json`. The documents root is in `./docs`
